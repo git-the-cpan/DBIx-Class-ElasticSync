@@ -1,0 +1,48 @@
+---
+abstract: 'Helps keep your data in Sync with Elastic'
+author:
+  - '* Jens Gassmann  <jg@gassmann.it>'
+build_requires:
+  Test::More: '0.98'
+configure_requires:
+  Module::Build::Tiny: '0.035'
+dynamic_config: 0
+generated_by: 'Minilla/v2.4.1, CPAN::Meta::Converter version 2.142690'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: DBIx-Class-ElasticSync
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+    - builder
+provides:
+  DBIx::Class::ElasticSync:
+    file: lib/DBIx/Class/ElasticSync.pm
+    version: '0.03'
+  DBIx::Class::ElasticSync::ResultSet:
+    file: lib/DBIx/Class/ElasticSync/ResultSet.pm
+  DBIx::Class::ElasticSync::Role::ElasticBlackholeResult:
+    file: lib/DBIx/Class/ElasticSync/Role/ElasticBlackholeResult.pm
+  DBIx::Class::ElasticSync::Role::ElasticResult:
+    file: lib/DBIx/Class/ElasticSync/Role/ElasticResult.pm
+  DBIx::Class::ElasticSync::Role::ElasticSchema:
+    file: lib/DBIx/Class/ElasticSync/Role/ElasticSchema.pm
+requires:
+  DBIx::Class: '0'
+  Moose::Role: '0'
+  Search::Elasticsearch: '0'
+  perl: '5.008001'
+version: '0.03'
+x_contributors:
+  - 'Sales User <sales@nydsosweb6.(none)>'
+  - 'Chris Shepherd <cshepherd@about.com>'
+  - 'Jens Gassmann <jens.gassmann@atomix.de>'
+  - 'Patrick Kilter <pas.freelance@googlemail.com>'

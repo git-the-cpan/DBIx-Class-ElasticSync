@@ -1,7 +1,7 @@
 {
    "abstract" : "Helps keep your data in Sync with Elastic",
    "author" : [
-      "* Jens Gassmann  <jg@gassmann.it>"
+      "=over"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v2.4.1",
@@ -43,8 +43,12 @@
       "runtime" : {
          "requires" : {
             "DBIx::Class" : "0",
+            "DBIx::Class::ResultClass::HashRefInflator" : "0",
+            "DateTime::Format::MySQL" : "0",
             "Moose::Role" : "0",
             "Search::Elasticsearch" : "0",
+            "Search::Elasticsearch::Compat::QueryParser" : "0",
+            "namespace::autoclean" : "0",
             "perl" : "5.008001"
          }
       },
@@ -57,7 +61,7 @@
    "provides" : {
       "DBIx::Class::ElasticSync" : {
          "file" : "lib/DBIx/Class/ElasticSync.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       },
       "DBIx::Class::ElasticSync::ResultSet" : {
          "file" : "lib/DBIx/Class/ElasticSync/ResultSet.pm"
@@ -73,11 +77,12 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.03",
+   "version" : "0.04",
    "x_contributors" : [
       "Sales User <sales@nydsosweb6.(none)>",
       "Chris Shepherd <cshepherd@about.com>",
       "Jens Gassmann <jens.gassmann@atomix.de>",
+      "Patrick Simon <info@webentwicklung-ruhr.de>",
       "Patrick Kilter <pas.freelance@googlemail.com>"
    ]
 }
